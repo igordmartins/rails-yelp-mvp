@@ -11,6 +11,12 @@
   </head>
 
   <body>
+  <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <%= link_to "All restaurants", restaurants_path, class: 'navbar-brand btn btn-secondary'  %>
+    <%= link_to "Add restaurant", new_restaurant_path, class: 'navbar-brand btn btn-success'  %>
+  </nav>
+  <div class= "container text-center">
     <%= yield %>
+  </div>
   </body>
 </html>
